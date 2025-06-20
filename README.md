@@ -76,8 +76,8 @@ A comprehensive, intelligent carbon footprint tracking application built with Re
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/EcoCloudApp.git
-cd EcoCloudApp
+git clone https://github.com/shikisvoid/ecofootprint.git
+cd ecofootprint
 ```
 
 ### 2. Install Dependencies
