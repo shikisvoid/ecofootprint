@@ -1,0 +1,195 @@
+{
+  "id": "carbon-facts-education",
+  "name": "Carbon Facts Education",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "education.carbon.facts",
+      "affectedContexts": [
+        {
+          "name": "education-context",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "fact_category",
+          "name": "fact_category",
+          "required": false,
+          "dataType": "@carbon_categories",
+          "value": "$fact_category",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fact_type",
+          "name": "fact_type",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$fact_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Let me share an interesting carbon fact with you! 🌱"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "facts-1",
+      "data": [
+        {
+          "text": "Tell me a carbon fact",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-2",
+      "data": [
+        {
+          "text": "Share an environmental fact",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-3",
+      "data": [
+        {
+          "text": "Why does ",
+          "userDefined": false
+        },
+        {
+          "text": "transport",
+          "alias": "fact_category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        },
+        {
+          "text": " have high carbon impact?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-4",
+      "data": [
+        {
+          "text": "Teach me about carbon footprints",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-5",
+      "data": [
+        {
+          "text": "What's interesting about ",
+          "userDefined": false
+        },
+        {
+          "text": "energy",
+          "alias": "fact_category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        },
+        {
+          "text": " consumption?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-6",
+      "data": [
+        {
+          "text": "Give me a fun environmental fact",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-7",
+      "data": [
+        {
+          "text": "Why should I care about carbon emissions?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "facts-8",
+      "data": [
+        {
+          "text": "Tell me something I didn't know about climate change",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

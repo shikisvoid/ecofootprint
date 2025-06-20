@@ -1,0 +1,79 @@
+{
+  "id": "carbon_categories",
+  "name": "carbon_categories",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "entries": [
+    {
+      "value": "transport",
+      "synonyms": [
+        "transport",
+        "transportation",
+        "travel",
+        "commute",
+        "driving",
+        "flying",
+        "car",
+        "vehicle",
+        "bus",
+        "train",
+        "flight",
+        "airplane",
+        "bike",
+        "bicycle",
+        "walk",
+        "walking"
+      ]
+    },
+    {
+      "value": "energy",
+      "synonyms": [
+        "energy",
+        "electricity",
+        "power",
+        "heating",
+        "cooling",
+        "gas",
+        "natural gas",
+        "heating oil",
+        "home energy",
+        "household energy",
+        "utilities"
+      ]
+    },
+    {
+      "value": "food",
+      "synonyms": [
+        "food",
+        "diet",
+        "eating",
+        "meals",
+        "nutrition",
+        "beef",
+        "chicken",
+        "meat",
+        "fish",
+        "vegetables",
+        "dairy",
+        "groceries",
+        "cooking"
+      ]
+    },
+    {
+      "value": "waste",
+      "synonyms": [
+        "waste",
+        "garbage",
+        "trash",
+        "recycling",
+        "composting",
+        "disposal",
+        "landfill",
+        "rubbish"
+      ]
+    }
+  ]
+}

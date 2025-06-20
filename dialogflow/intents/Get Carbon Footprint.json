@@ -1,0 +1,153 @@
+{
+  "id": "get-carbon-footprint",
+  "name": "Get Carbon Footprint",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get.carbon.footprint",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "time_period",
+          "name": "time_period",
+          "required": false,
+          "dataType": "@time_periods",
+          "value": "$time_period",
+          "defaultValue": "this month",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "category",
+          "name": "category",
+          "required": false,
+          "dataType": "@carbon_categories",
+          "value": "$category",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Let me get your carbon footprint data for you! 📊"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "carbon-footprint-1",
+      "data": [
+        {
+          "text": "What's my carbon footprint",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "carbon-footprint-2",
+      "data": [
+        {
+          "text": "Show me my ",
+          "userDefined": false
+        },
+        {
+          "text": "this month",
+          "alias": "time_period",
+          "meta": "@time_periods",
+          "userDefined": true
+        },
+        {
+          "text": " carbon emissions",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "carbon-footprint-3",
+      "data": [
+        {
+          "text": "How much CO2 have I emitted from ",
+          "userDefined": false
+        },
+        {
+          "text": "transport",
+          "alias": "category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "carbon-footprint-4",
+      "data": [
+        {
+          "text": "My environmental impact ",
+          "userDefined": false
+        },
+        {
+          "text": "this week",
+          "alias": "time_period",
+          "meta": "@time_periods",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "carbon-footprint-5",
+      "data": [
+        {
+          "text": "Carbon footprint summary",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

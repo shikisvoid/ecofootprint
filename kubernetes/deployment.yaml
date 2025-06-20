@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eco-footprint-app
+  labels:
+    app: eco-footprint-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: eco-footprint-app
+  template:
+    metadata:
+      labels:
+        app: eco-footprint-app
+    spec:
+      containers:
+      - name: eco-footprint-app
+        image: gcr.io/gen-lang-client-0650130629/eco-footprint-app:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: VITE_FIREBASE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-api-key
+        - name: VITE_FIREBASE_AUTH_DOMAIN
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-auth-domain
+        - name: VITE_FIREBASE_PROJECT_ID
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-project-id
+        - name: VITE_FIREBASE_STORAGE_BUCKET
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-storage-bucket
+        - name: VITE_FIREBASE_MESSAGING_SENDER_ID
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-messaging-sender-id
+        - name: VITE_FIREBASE_APP_ID
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: firebase-app-id
+        - name: VITE_WEATHER_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: eco-footprint-secrets
+              key: weather-api-key
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 80
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eco-footprint-service
+spec:
+  selector:
+    app: eco-footprint-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer

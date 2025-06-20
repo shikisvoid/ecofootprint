@@ -1,0 +1,209 @@
+{
+  "id": "app-navigation-guide",
+  "name": "App Navigation Guide",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "app.navigation.guide",
+      "affectedContexts": [
+        {
+          "name": "app-guidance-context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "feature_name",
+          "name": "feature_name",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$feature_name",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "action_type",
+          "name": "action_type",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$action_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'll help you navigate the app! 🧭"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "nav-guide-1",
+      "data": [
+        {
+          "text": "How do I use the ",
+          "userDefined": false
+        },
+        {
+          "text": "carbon calculator",
+          "alias": "feature_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-2",
+      "data": [
+        {
+          "text": "Show me around the app",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-3",
+      "data": [
+        {
+          "text": "How do I ",
+          "userDefined": false
+        },
+        {
+          "text": "generate reports",
+          "alias": "action_type",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-4",
+      "data": [
+        {
+          "text": "Where can I find my ",
+          "userDefined": false
+        },
+        {
+          "text": "achievements",
+          "alias": "feature_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-5",
+      "data": [
+        {
+          "text": "Take me to ",
+          "userDefined": false
+        },
+        {
+          "text": "profile settings",
+          "alias": "feature_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-6",
+      "data": [
+        {
+          "text": "What features are available?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-7",
+      "data": [
+        {
+          "text": "Give me a tour of the app",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "nav-guide-8",
+      "data": [
+        {
+          "text": "How does the ",
+          "userDefined": false
+        },
+        {
+          "text": "gamification",
+          "alias": "feature_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " work?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

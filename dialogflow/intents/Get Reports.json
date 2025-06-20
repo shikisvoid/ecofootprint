@@ -1,0 +1,147 @@
+{
+  "id": "get-reports",
+  "name": "Get Reports",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get.reports",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "report_type",
+          "name": "report_type",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$report_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "time_period",
+          "name": "time_period",
+          "required": false,
+          "dataType": "@time_periods",
+          "value": "$time_period",
+          "defaultValue": "this month",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'll generate your environmental report! 📊"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "reports-1",
+      "data": [
+        {
+          "text": "Generate my environmental report",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "reports-2",
+      "data": [
+        {
+          "text": "Show me my ",
+          "userDefined": false
+        },
+        {
+          "text": "monthly",
+          "alias": "report_type",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " report",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "reports-3",
+      "data": [
+        {
+          "text": "I want to see my progress report",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "reports-4",
+      "data": [
+        {
+          "text": "Environmental summary for ",
+          "userDefined": false
+        },
+        {
+          "text": "this week",
+          "alias": "time_period",
+          "meta": "@time_periods",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "reports-5",
+      "data": [
+        {
+          "text": "Download my carbon footprint report",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "add-carbon-entry",
+  "name": "Add Carbon Entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "add.carbon.entry",
+      "affectedContexts": [
+        {
+          "name": "carbon-entry-context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "category",
+          "name": "category",
+          "required": true,
+          "dataType": "@carbon_categories",
+          "value": "$category",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            "What category would you like to track? (transport, energy, food, or waste)"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "activity",
+          "name": "activity",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$activity",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "amount",
+          "name": "amount",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$amount",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'll help you add a carbon footprint entry! 📝"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "add-carbon-1",
+      "data": [
+        {
+          "text": "I want to track my ",
+          "userDefined": false
+        },
+        {
+          "text": "transport",
+          "alias": "category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        },
+        {
+          "text": " emissions",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "add-carbon-2",
+      "data": [
+        {
+          "text": "Add carbon entry for ",
+          "userDefined": false
+        },
+        {
+          "text": "energy",
+          "alias": "category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "add-carbon-3",
+      "data": [
+        {
+          "text": "I drove ",
+          "userDefined": false
+        },
+        {
+          "text": "50",
+          "alias": "amount",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " km today",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "add-carbon-4",
+      "data": [
+        {
+          "text": "Track my carbon footprint",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "add-carbon-5",
+      "data": [
+        {
+          "text": "Log ",
+          "userDefined": false
+        },
+        {
+          "text": "food",
+          "alias": "category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        },
+        {
+          "text": " consumption",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "small-talk-how-are-you",
+  "name": "Small Talk - How are you",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "smalltalk.how.are.you",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'm doing great! I'm excited to help you track your environmental impact and make a positive difference for our planet! 🌱 How can I assist you with your carbon footprint today?",
+            "I'm fantastic, thank you for asking! I love helping people become more environmentally conscious. What would you like to know about your carbon emissions or environmental data?",
+            "I'm wonderful! Every day I get to help people reduce their environmental impact makes me happy. How can I help you go green today? 🌍"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "how-are-you-1",
+      "data": [
+        {
+          "text": "How are you?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "how-are-you-2",
+      "data": [
+        {
+          "text": "How are you doing?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "how-are-you-3",
+      "data": [
+        {
+          "text": "How's it going?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

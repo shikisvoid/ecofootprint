@@ -1,0 +1,210 @@
+{
+  "id": "technical-support",
+  "name": "Technical Support",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "support.technical.help",
+      "affectedContexts": [
+        {
+          "name": "support-context",
+          "lifespan": 10
+        }
+      ],
+      "parameters": [
+        {
+          "id": "issue_type",
+          "name": "issue_type",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$issue_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "feature_affected",
+          "name": "feature_affected",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$feature_affected",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'm here to help you troubleshoot! Let me guide you through some solutions. 🔧"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "support-1",
+      "data": [
+        {
+          "text": "I'm having trouble with ",
+          "userDefined": false
+        },
+        {
+          "text": "login",
+          "alias": "issue_type",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-2",
+      "data": [
+        {
+          "text": "The app is not working",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-3",
+      "data": [
+        {
+          "text": "My data is not saving",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-4",
+      "data": [
+        {
+          "text": "I can't access ",
+          "userDefined": false
+        },
+        {
+          "text": "reports",
+          "alias": "feature_affected",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-5",
+      "data": [
+        {
+          "text": "Something is broken",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-6",
+      "data": [
+        {
+          "text": "Help me fix this issue",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-7",
+      "data": [
+        {
+          "text": "The ",
+          "userDefined": false
+        },
+        {
+          "text": "calculator",
+          "alias": "feature_affected",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " is not loading",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-8",
+      "data": [
+        {
+          "text": "I need technical support",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "support-9",
+      "data": [
+        {
+          "text": "Contact support",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

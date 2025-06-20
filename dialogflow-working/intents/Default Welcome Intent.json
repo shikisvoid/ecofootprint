@@ -1,0 +1,40 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hello! I'm your EcoCloudApp assistant. I can help you track your carbon footprint, get environmental insights, and provide personalized recommendations. 🌱",
+            "Hi there! Welcome to EcoCloudApp! I'm here to help you monitor your carbon emissions, analyze your environmental data, and suggest ways to live more sustainably. How can I assist you today?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

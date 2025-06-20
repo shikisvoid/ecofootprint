@@ -1,0 +1,173 @@
+{
+  "id": "feature-discovery",
+  "name": "Feature Discovery",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "app.feature.discovery",
+      "affectedContexts": [
+        {
+          "name": "discovery-context",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "user_goal",
+          "name": "user_goal",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$user_goal",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Let me help you discover the perfect features for your needs! 🔍"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "discovery-1",
+      "data": [
+        {
+          "text": "What can this app do?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-2",
+      "data": [
+        {
+          "text": "I want to ",
+          "userDefined": false
+        },
+        {
+          "text": "track my progress",
+          "alias": "user_goal",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-3",
+      "data": [
+        {
+          "text": "Show me features I haven't used",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-4",
+      "data": [
+        {
+          "text": "What's new in the app?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-5",
+      "data": [
+        {
+          "text": "Help me ",
+          "userDefined": false
+        },
+        {
+          "text": "get started",
+          "alias": "user_goal",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-6",
+      "data": [
+        {
+          "text": "I'm new here",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-7",
+      "data": [
+        {
+          "text": "What should I do next?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "discovery-8",
+      "data": [
+        {
+          "text": "Recommend features for me",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

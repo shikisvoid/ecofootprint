@@ -1,0 +1,127 @@
+{
+  "id": "get-recommendations",
+  "name": "Get Recommendations",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get.recommendations",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "category",
+          "name": "category",
+          "required": false,
+          "dataType": "@carbon_categories",
+          "value": "$category",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I'll provide you with personalized recommendations to reduce your environmental impact! 💡"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "userSays": [
+    {
+      "id": "recommendations-1",
+      "data": [
+        {
+          "text": "How can I reduce my carbon footprint?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "recommendations-2",
+      "data": [
+        {
+          "text": "Give me tips to reduce ",
+          "userDefined": false
+        },
+        {
+          "text": "transport",
+          "alias": "category",
+          "meta": "@carbon_categories",
+          "userDefined": true
+        },
+        {
+          "text": " emissions",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "recommendations-3",
+      "data": [
+        {
+          "text": "What can I do to be more eco-friendly?",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "recommendations-4",
+      "data": [
+        {
+          "text": "Suggestions for sustainable living",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    },
+    {
+      "id": "recommendations-5",
+      "data": [
+        {
+          "text": "Help me go green",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "en",
+      "updated": 0
+    }
+  ]
+}

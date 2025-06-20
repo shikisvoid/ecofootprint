@@ -1,0 +1,75 @@
+{
+  "id": "time_periods",
+  "name": "time_periods",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "entries": [
+    {
+      "value": "today",
+      "synonyms": [
+        "today",
+        "this day",
+        "current day"
+      ]
+    },
+    {
+      "value": "yesterday",
+      "synonyms": [
+        "yesterday",
+        "last day"
+      ]
+    },
+    {
+      "value": "this week",
+      "synonyms": [
+        "this week",
+        "current week",
+        "weekly"
+      ]
+    },
+    {
+      "value": "last week",
+      "synonyms": [
+        "last week",
+        "previous week"
+      ]
+    },
+    {
+      "value": "this month",
+      "synonyms": [
+        "this month",
+        "current month",
+        "monthly"
+      ]
+    },
+    {
+      "value": "last month",
+      "synonyms": [
+        "last month",
+        "previous month"
+      ]
+    },
+    {
+      "value": "this year",
+      "synonyms": [
+        "this year",
+        "current year",
+        "yearly",
+        "annually"
+      ]
+    },
+    {
+      "value": "all time",
+      "synonyms": [
+        "all time",
+        "total",
+        "overall",
+        "lifetime",
+        "ever"
+      ]
+    }
+  ]
+}

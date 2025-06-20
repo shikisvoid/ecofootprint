@@ -1,0 +1,15 @@
+runtime: nodejs18
+
+env_variables:
+  NODE_ENV: production
+  VITE_FIREBASE_API_KEY: "your-firebase-api-key"
+  VITE_FIREBASE_AUTH_DOMAIN: "gen-lang-client-0650130629.firebaseapp.com"
+  VITE_FIREBASE_PROJECT_ID: "gen-lang-client-0650130629"
+  VITE_FIREBASE_STORAGE_BUCKET: "gen-lang-client-0650130629.appspot.com"
+  VITE_FIREBASE_MESSAGING_SENDER_ID: "708294481961"
+  VITE_FIREBASE_APP_ID: "your-app-id"
+  VITE_WEATHER_API_KEY: "57b2f59f486e4d46b40172045253105"
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
